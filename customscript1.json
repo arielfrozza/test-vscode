@@ -1,0 +1,4 @@
+{
+    "fileUris": ["https://raw.githubusercontent.com/arielfrozza/test-vscode/main/install_web1.sh"],
+    "commandToExecute": "./install_web1.sh"
+}
