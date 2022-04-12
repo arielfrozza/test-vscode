@@ -1,0 +1,9 @@
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-cli
+
+az deployment group create --resource-group teste1 --template-file template04.json
+az deployment group create --resource-group teste1 --template-file paramsfile/template07.json --parameters paramsfile/parameters01.json
+az group delete --name teste1
+
+New-AzResourceGroupDeployment -ResourceGroupName teste1 -TemplateFile template04.json
+New-AzResourceGroupDeployment -ResourceGroupName teste1 -TemplateFile paramsfile/template07.json -TemplateParameterFile paramsfile/parameters01.json
+Remove-AzResourceGroup -Name teste1

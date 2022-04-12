@@ -1,3 +1,8 @@
 # test-vscode
 testing Vs Code with GitHub
- vscode://vscode.github-authentication/did-authenticate?windowid=1&code=2c42dd1e846bd996f6fa&state=d429d6ba-54a7-43dd-a759-0bcaaf6d0939 
+
+az vm create --resource-group 104rg --name demo-vm-2 --location eastus --image CentOS --admin-username azureuser --admin-password Raparapadu@123
+
+az vm open-port --port 80 --resource-group 104rg --name demo-vm-2
+
+az vm extension set --resource-group 104rg --vm-name demo-vm-2 --name customScript --publisher Microsoft.Azure.Extensions --settings ./customscript2.json
